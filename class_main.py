@@ -31,7 +31,7 @@ while len(guessed_states) < 50:
         new_data.to_csv("states_to_learn.csv")
 
         # Exit while loop if answer_state == "Exit":
-        break
+        break # FYI, break always acts on the nearest enclosing loop, which in this case is the while loop.
 
     # Write answer in list & on screen.
     if answer_state in all_states:
